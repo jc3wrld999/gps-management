@@ -4,4 +4,4 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
 EXPOSE 5001
-CMD ["python", "test.py"]
+CMD ["wsgi", "test.py"]
