@@ -5,4 +5,4 @@ RUN python -m pip install --upgrade pip
 RUN python -m pip install -r requirements.txt
 COPY . .
 EXPOSE 5001
-CMD ["uwsgi", "uwsgi.ini"]
+CMD ["python", "app.py"]
